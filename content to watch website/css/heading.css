@@ -1,0 +1,107 @@
+h3 {
+    text-decoration: underline
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+dd {
+    font-family: 'Source Sans Pro', Lucida Sans Unicode;
+    font-weight: bold;
+}
+
+body {
+    background-color: #e5e2fd;
+    
+}
+
+.border {
+    border-style: solid
+}
+
+.border2 {
+    border-style: solid;
+    border-color: grey;
+    border-radius: 10px;
+    float: right
+}
+
+#para3 {
+    margin: auto
+}
+
+#display {
+    display: inline-block;
+}
+
+.punch {
+    float: right
+}
+
+.navbar {
+    background-color: Purple;
+    border-radius: 33px;
+    
+  
+}
+#searchbox{
+    float: right;
+    display: block;
+    border:solid black 2px;
+    border-radius: 14px;
+    margin: 8px 12px;
+    padding: 4px 14px;
+    
+}
+
+    
+
+.navbar li {
+    float: left;
+    list-style: none;
+    padding: 3px;
+    margin: 9px 10px;
+}
+
+
+.navbar ul {
+
+    overflow: auto;
+    margin-top: 0px;
+    
+}
+
+.navbar li a {
+    padding: 3px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.navbar li a:hover {
+    color: black;
+    
+}
+
+.border {
+    position: relative;
+}
+
+#image1 {
+    top: 2px;
+}
+
+#image2 {
+    top: 3px;
+}
+
+#image3 {
+    top: 28px;
+}
+.border2{
+    padding: 5px;
+}
