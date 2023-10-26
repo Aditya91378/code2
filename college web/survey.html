@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participant Survey</title>
+</head>
+
+<body>
+    <h1>Survey for Participants</h1>
+    <form action="login">
+        <label for="P1">Participants Name :</label>
+        <input type="text" name="P1" id="Participant"><br>
+        <label for="A1">Age</label>
+        <input type="number" name="A1" id="age"><br>
+
+        <label>Gender:</label>
+        <label for="Male" name="Gender">Male</label>
+        <input type="radio" name="Gender" id="Gender" value="Male">
+        <label for="Female">Female</label>
+        <input type="radio" name="Gender" id="Gender" value="Female"><br>
+        
+        <label for="H1">How much do you excercise ?</label>
+        <input type="range" name="H1" id="App" min="1" max="8" oninput="rangeValue.innerText=this.value"><br>
+        <v id="rangeValue">5</v>
+        <br>
+
+        <label >Do you enjoy outdor Activities :</label>
+        <label for="Ans">Yes</label>
+        <input type="radio" id="Ans" value="Yes">
+        <label for="Ans">No</label>
+        <input type="radio" name="Y" id="Ans" value="No"><br>
+
+        <label for="A2">Additional Comments</label><br>
+        <textarea name="A2" id="A2" cols="30" rows="10"></textarea><br>
+<br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+
+</html>

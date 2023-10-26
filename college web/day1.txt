@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marquee experiments</title>
+</head>
+<body>
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ab dolor excepturi tenetur repellat quia harum quaerat vel non ipsa, fuga, culpa, quibusdam aliquam quod.
+ <marquee behavior="alternate" width="80%" height="60%" >
+   Lorem ipsum, dolor sit amet consectetur adipisicing.
+
+ </marquee>
+ <p><b>H</b><sub>2</sub><b>O</b></p>
+ <p><b>
+    x
+ </b><sup>2</sup></p>
+<blockquote>
+    god help those who help themselves
+ </blockquote>
+ <footer>Google</footer>
+</body>
+</html>

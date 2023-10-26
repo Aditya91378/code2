@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Child</title>
+</head>
+<body>
+
+    <!-- printing array in run time html  and parent child
+     <h2>Javascript html Dom</h2>
+    <p>Finding element by tag name</p>
+    <p>second para</p>
+    <p id="demo"></p> -->
+
+<!-- first code over -->
+
+<div id="parent">
+    <div id="child1">child1 </div><div id="child2">child 2 </div><div id="child3" >child3</div>
+</div> 
+<script>
+    
+    // const element=document.getElementsByTagName("p");
+    // document.getElementById("demo").innerHTML="The text in firstparagraph is ;"+element[1].innerHTML;
+    
+    //  first code over
+        
+        // finding parent element by its Id 
+        const parentElement=document.getElementById("parent");
+        
+        // finding length of child node
+        const length=parentElement.childNodes.length;
+
+        // index of child node
+        const childNodes=parentElement.childNodes[0].textContent;
+
+        // append a new child node to the parent element 
+        const newchild=document.createElement("div");
+        newchild.textContent="child4";
+        parentElement.appendChild(newchild);
+ 
+        // access the first and last child nodes 
+         const firstchildnode=parentElement.firstchildId;
+         const lastchildnode=parentElement.constchild.textContent;
+
+        //  remove the second child
+        const secondchild=document.getElementById("child2");
+        parentElement.removechild(secondchild);
+
+        // replace first child with new node
+        const firstchild=document.getElementById("child2")
+        const newnode=document.createElement("div");
+        mewnode.textContent="Replaced child";
+        parentElment.replacechild(newnode,firstchild);
+
+        //check if parents has child nodes
+
+        const haschildren=parentElement.hasChildNodes();
+
+        //Acces next sibling of child node
+
+            const nextsibling=firstchild.nextSibling;
+            let idsibling=null;
+            if(nextsibling){
+                idsibling=idsibling.id;
+            }
+                //Inset node before child
+                const newchild=document.createElement("div");
+            newchild.textContent="Child 4";
+            parentElement.insertBefore(newchild,firstchild);
+            
+                //Inset node after child
+                const newchild=document.createElement("div");
+            newchild.textContent="Child 5";
+            parentElement.insert(newchild,firstchild);
+    </script> 
+</body>
+</html>

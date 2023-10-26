@@ -1,0 +1,6 @@
+ img{position: absolute;left: 450px;} 
+ .info{text-align: center; font-family: 'Poppins', sans-serif;}
+body{background-image: url(Puri_Montage1.png);background-size:contain ;background-repeat:no-repeat;min-height: 2000px;}
+.tourism{font-family: 'Poppins', sans-serif;text-decoration: underline;}
+#sweets{font-family: 'Poppins', sans-serif;text-decoration: underline;float: right;}
+#puri{font-style: italic;}

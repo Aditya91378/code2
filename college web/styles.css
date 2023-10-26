@@ -1,0 +1,18 @@
+header {
+    background-color: #333; /* Background color for the header */
+    color: #fff; /* Text color for the header */
+    padding: 10px; /* Add padding to the header */
+    display: flex; /* Use flexbox to align logo and title horizontally */
+    align-items: center; /* Vertically center items in the header */
+}
+
+.logo img {
+    max-width: 100px; /* Set a maximum width for the logo */
+    height: auto; /* Maintain the aspect ratio of the logo */
+    margin-right: 20px; /* Add spacing between the logo and title */
+}
+
+h1 {
+    margin: 0; /* Remove default margin for the title */
+    font-size: 24px; /* Adjust the font size as needed */
+}
