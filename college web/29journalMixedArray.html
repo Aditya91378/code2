@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jouranl29</title>
+</head>
+<body>
+    <div id="parent"></div>
+    <script>
+        let parent=document.getElementById("parent");
+        var arrinfo=["Aditya",19,"01/01/2005"];
+        var objinfo={name:"Aditya",age:19,DoB:"01/01/2005"}
+        parent.innerHTML=arrinfo;
+        document.write("<br>"+objinfo["name"]);
+        let newChild=document.createElement("p");
+        parent.appendChild(newChild);
+        newChild.setAttribute("Class","txt");
+        newChild.textContent="Elements class name: "+newChild.getAttribute("Class")
+    </script>
+</body>
+</html>
