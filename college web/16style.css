@@ -1,0 +1,5 @@
+h1{color: red;}
+.highlight{background-color: yellow;}
+#content{font-size: 16px;}
+#header{background-color: lightgray;padding: 10px;}
+ul li:first-child{font-weight: bold;}

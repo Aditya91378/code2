@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="txt" onkeyup="uc()" onkeydown="bgc()">
+    <br><br>
+    <button type="submit" id="btn" onclick="ms()">
+        submit
+    </button>
+    <script>
+        function bgc() {
+            document.getElementById("txt").style.backgroundColor = "lightblue";
+        }
+        function uc() {
+            let x = document.getElementById("txt");
+            x.value = x.value.toUpperCase();
+        }
+        function ms() {
+alert("Data Submitted");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+body{background-color: skyblue}
+.heading{color: white;background-color: rgb(47, 187, 47);
+text-align: center; padding: 20px 0px;}
+.content{background-color: white;border-radius: 20px;
+padding:20px;margin:20px }
+h2{color: red;}
+footer{background-color: yellow;padding: 20px 5px;
+text-align: center;position: sticky;bottom: 0px;}

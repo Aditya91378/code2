@@ -1,0 +1,5 @@
+.entryheader{text-transform: uppercase;text-decoration: underline;
+text-indent: 20px;}
+.entry-content{text-transform: capitalize;text-decoration: overline;
+text-indent: 30px;}
+.signature{font-variant: small-caps;text-decoration: line-through;}

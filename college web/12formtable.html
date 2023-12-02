@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Form in Table</title>
+</head>
+
+<body >
+    <h1>Student Registration</h1>
+    <br><br>
+    <table border="2">
+        <form>
+            <tr>
+                <td>
+                    <label for="name_input"> First Name: </label>
+                </td>
+                <td>
+                    <input type="text" id="name_input">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lname_input"> Last Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="lname_input" name="lname_input">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email_input"> Valid Email:</label>
+                </td>
+                <td>
+                    <input type="email" name="email_input" id="email_input">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date_input">Date of Birth:</label>
+                </td>
+                <td>
+                    <input type="date" id="date_input" name="date_input">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="f_input">Father's Name:</label>
+                </td>
+                <td>
+                    <input typte="text" id="f_input">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="m_input">Mother's Name:</label>
+                </td>
+                <td>
+                    <input typte="text" id="m_input">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="add_input">Address:</label>
+                </td>
+                <td>
+                    <textarea id="add_input"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gen_inp"> Gender:</label>
+                </td>
+                <td>
+                    <label for="gen_inp2">Male:</label>
+                    <input type="radio" name="gen_inp" id="gen_inp2">
+                    <label for="gen_inp1">Female:</label>
+                    <input type="radio" name="gen_inp" id="gen_inp1">
+                </td>
+            </tr>
+            <td>
+                <label for="qul_inp">Qualifications:</label>
+            </td>
+            <td>
+                <label for="ssc_inp">SSC</label>
+                <input type="checkbox" id="1">
+                <label for="per_inp">Percentage</label>
+                <input type="text" id="per_inp">
+                <br>
+                <label for="hs_inp">HSC</label>
+                <input type="checkbox" id="2">
+                <label for="per_inp">Percentage</label>
+                <input type="text" id="per_inp">
+                <br>
+                <label for="ssc_inp">BSC</label>
+                <input type="checkbox" id="3">
+                <label for="per_inp">Percentage</label>
+                <input type="text" id="per_inp">
+                <br>
+                <label for="ssc_inp">MCA</label>
+                <input type="checkbox" id="4">
+                <label for="per_inp">Percentage</label>
+                <input type="text" id="per_inp">
+                <br>
+                <label for="ssc_inp">MBA</label>
+                <input type="checkbox" id="5">
+                <label for="per_inp">Percentage</label>
+                <input type="text" id="per_inp">
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="exp_inp">Experience:</label>
+                </td>
+                <td>
+                    <select id="exp_inp">
+                        <option hidden selected>select</option>
+                        <option id="i">0-1yrs</option>
+                        <option id="ii">1-2yrs</option>
+                        <option id="iii">2-3yrs</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ph_inp">Upload Photo:</label>
+                </td>
+                <td>
+                    <input type="file" id="ph_inp" accept="image/*" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit">
+                    <input type="reset">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>

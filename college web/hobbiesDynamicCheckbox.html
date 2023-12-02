@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body >
+        <H2>Hobbies</H2>
+        <label for="sports">Sports</label>
+        <input type="checkbox" name="sports" id="sports" onclick="sportselected()">
+        <label for="dance">Dance</label>
+        <input type="checkbox" name="dance" id="dance" onclick="danceselected()">
+        <label for="music">Music</label>
+        <input type="checkbox" name="music" id="music" onclick="musicselected()">
+        <ul id="parent">
+            <!-- <li id="sp" style="visibility: hidden;">sports has been selected</li> -->
+            <li id="sp" style="visibility: hidden;">sports has been selected</li>
+            <li id="da" style="visibility: hidden;">dance has been selected</li>
+         <li id="mu" style="visibility: hidden;">music has been selected</li>
+        </ul>
+    <script>
+        var a;
+        var sp=document.getElementById("sp")
+        var da=document.getElementById("da")
+        var mu=document.getElementById("mu")
+
+        var parent=document.getElementById("parent")
+        function sportselected(){
+            if (document.getElementById("sports").checked) {
+                document.getElementById("sp").style.visibility="visible"
+            } else {
+                       parent.removeChild(sp);
+                       //  document.getElementById("sp").style.visibility="hidden"
+                    }
+                }
+                function danceselected(){
+                    if (document.getElementById("dance").checked) {
+                        document.getElementById("da").style.visibility="visible"
+                    } else {
+                        parent.removeChild(da);
+                        // document.getElementById("da").style.visibility="hidden"
+                    }
+                    
+                }
+                function musicselected(){
+                    if (document.getElementById("music").checked) {
+                        document.getElementById("mu").style.visibility="visible"
+                    } else {
+                        parent.removeChild(mu);
+                        // document.getElementById("mu").style.visibility="hidden"
+                    }
+                }
+                
+                </script>
+</body>
+</html>

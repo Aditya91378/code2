@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java</title>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, quaerat!</p>
+    <ul id="even"><h1>EVEN</h1></ul>
+    <ul id="odd"><h1>ODD</h1></ul>
+    <script>
+        var i=1;
+        var a=[]
+        var list;
+        var even=document.getElementById("even")
+        var odd=document.getElementById("odd")
+        // ,b=[],c[];
+    while (i<6) {
+       a[i]=parseInt(prompt("enter number "+i))
+       if (a[i]%2==1) {
+        list=document.createElement("li")
+        list.innerHTML=a[i]
+        odd.appendChild(list)
+        //    b+=a[i];
+    } else {
+        list=document.createElement("li")
+        list.innerHTML=a[i]
+        even.appendChild(list)
+        // c+=a[i];
+        }
+        i++;
+    }
+    // document.getElementsByTagName("p").innerHTML=
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>journal30loadtime
+        
+    </title>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem qui labore, obcaecati exercitationem ea unde!</p>
+    <script>
+        window.onload=function load(){
+            var loadtime=new Date();
+              localStorage.setItem("loadtime",loadtime)
+        }
+        window.onunload=function unload(){
+            var unloadtime=new Date();
+            localStorage.setItem("unloadtime",unloadtime)
+        }
+    </script>
+</body>
+</html>
