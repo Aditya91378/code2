@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+</head>
+<body>
+    <button onclick="button1()" id="btn1">Click me</button><br><br>
+    <button id="btn2" onmousedown="mousedown()" onmouseup="mouseup()">Click me to change color</button>
+    <div id="over" onmouseover="mouseover()">Is The mouse over me  ???</div>
+    <div id="move" onmousemove="mousemove(event)"></div><br><br>
+    <button ondblclick="doubleClick()">Double click this paragraph to trigger
+        a function
+    </button>
+    <p id="dbl"></p>
+    <script>
+        function button1(){
+            document.getElementById("btn1").style.backgroundColor="blue";
+        }
+        function mousedown(){
+            document.getElementById("btn2").style.backgroundColor="red";
+        }
+        function mouseup(){
+            document.getElementById("btn2").style.backgroundColor="green";
+        }
+        function mousemove(e){
+            let move=document.getElementById("move"); 
+            move.style.height="100px";
+            move.style.weight="100px";
+        }
+        function mouseover(){
+            let over=document.getElementById("over");
+            over.style.backgroundColor="blue"
+            over.innerHTML="Yes you moused over!!";
+        }
+        function doubleClick(){
+            document.getElementById("dbl").innerHTML="you have double Double clicked !!".style.textColor="red";
+        }
+    </script>
+</body>
+</html>
