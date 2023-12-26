@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="java">hii</div>
+    <script>
+    
+    //         var i=1;
+    //         var a=[];
+    //         var sum=0;
+    //         while(i<6){
+
+    //              a [i]=parseInt(prompt("Enter the "+i+" number"));
+    //              sum+=a[i]
+    //              i++
+    //         }
+    //    document. write(sum);
+
+
+
+
+
+
+     var string=prompt("check if the word is pallindrone or not ");
+    let revString="";
+    // document.getElementById("java").innerHTML="It is not a pallindrone";
+    for( var i = string.length-1;i>=0;i--){
+        revString+=string[i];
+        document.getElementById("java").innerHTML="It is a pallindrone";
+    }
+    if(string==revString){
+            alert("It is a pallindrone");
+        }
+        else{
+            alert("It is not a pallindrone")
+            
+        } 
+        // <script>
+
+        //     var str = prompt()
+    
+        //     let reversedStr = "";
+        //     for (let i = str.length - 1; i >= 0; i--) {
+        //         reversedStr += str[i];
+        //     }
+    
+        //     if (str == reversedStr) {
+        //         alert(str + " is palindrome")
+        //     }
+        //     else {
+        //         alert(str + " is not palindrome")
+        //     }
+    
+        // </script>
+    
+     </script> 
+</body>
+</html>  
