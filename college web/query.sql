@@ -16,3 +16,29 @@ select min(sal)from emp0;
 select sum(sal)from emp0;
 select count(commision)from emp0;
 select MAX(salary), deptno from emp0 GROUP BY deptno ;
+create table Student( s_id INT ,sname varchar(15),perc INT,gender char ,Branch VARCHAR(10));
+--DESC STUDENT;
+
+--DROP TABLE  student;
+DROP TABLE STUDENT;
+INSERT INTO Student VALUES (101,'hari',99,'M','CSE');
+INSERT INTO Student VALUES (102,'Ramya',90,'F','ESE');
+INSERT INTO Student VALUES (103,'Sandeep',95,'M','CSE');
+INSERT INTO Student VALUES (104,'Sony',78,'F','CSE');
+INSERT INTO Student VALUES (105,'Saradhi',88,'M','CIVIL');
+INSERT INTO Student VALUES (106,'Yamini',98,'F','EE');
+select * FROM Student;
+SELECT count(*),Branch FROM Student GROUP BY Branch ;
+SELECT count(*),gender FROM Student GROUP BY gender ;
+SELECT avg(perc),gender FROM Student GROUP BY gender ;
+SELECT max(perc),gender FROM Student GROUP BY gender ;
+SELECT MIN(perc),gender,SNAME FROM Student GROUP BY gender ,SNAME;
+
+
+DELETE FROM student
+WHERE ROWID NOT IN (
+  SELECT MAX(ROWID)
+  FROM student
+  GROUP BY s_id, sname, perc
+);
+
