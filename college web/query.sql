@@ -41,4 +41,9 @@ WHERE ROWID NOT IN (
   FROM student
   GROUP BY s_id, sname, perc
 );
-
+SELECT max(sal),dept_no FROM emp group BY dept_no having max(sal)>=3000 order by max(sal) ASC;
+SELECT count(*),dept_no FROM emp group BY dept_no  order by count(*) DESC;
+SELECT * FROM emp  order by sal DESC;
+SELECT * FROM emp  order by sal ASC;
+SELECT * FROM emp  where dept_no=10  order by sal ASC;
+SELECT max(sal),dept_no FROM emp group BY dept_no  order by max(sal) ASC;
