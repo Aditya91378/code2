@@ -47,3 +47,15 @@ SELECT * FROM emp  order by sal DESC;
 SELECT * FROM emp  order by sal ASC;
 SELECT * FROM emp  where dept_no=10  order by sal ASC;
 SELECT max(sal),dept_no FROM emp group BY dept_no  order by max(sal) ASC;
+
+
+select current_date from dual;
+
+select month-between(to_date,('02-02-1995','mm-dd-yyyy'),to_date('01-01-1995','mm-dd-yyyy'))from dual;
+select next_day('18-mar-2016','monday'),'next_day'from dual;
+select to_char(sysdate,'yyyy-mm-dd''hh-mm-ss')from dual;
+
+
+select emp_job, sum(sal) as totalsalary from emp group by emp_job;
+select dept_no from emp group by dept_no having avg(sal) between 2500 and 3000;
+select dept_no, count(*) as clerk from emp where emp_job='clerk' group by dept_no;
