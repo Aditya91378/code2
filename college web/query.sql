@@ -59,3 +59,39 @@ select to_char(sysdate,'yyyy-mm-dd''hh-mm-ss')from dual;
 select emp_job, sum(sal) as totalsalary from emp group by emp_job;
 select dept_no from emp group by dept_no having avg(sal) between 2500 and 3000;
 select dept_no, count(*) as clerk from emp where emp_job='clerk' group by dept_no;
+SELECT * FROM emp;
+create table  table1 (Empid int ,Ename VARCHAR (10));
+INSERT INTO table1 VALUES (1,'Reena');
+INSERT INTO table1 VALUES (2,'Seema');
+INSERT INTO table1 VALUES (3,'Geeta');
+INSERT INTO table1 VALUES (7,'Rohit');
+INSERT INTO table1 VALUES (8,'Rohan');
+SELECT * FROM table1;
+create table  table2 (Empid int ,Ename VARCHAR (10));
+INSERT INTO table2 VALUES (4,'Akash');
+INSERT INTO table2 VALUES (1,'Reena');
+INSERT INTO table2 VALUES (2,'Seema');
+INSERT INTO table2 VALUES (76,'Geeta');
+
+select * FROM table1 
+            MINUS
+            SELECT * FROM table2;
+select * FROM table1 
+            union
+            SELECT * FROM table2;
+select * FROM table1 
+            INTERSECT
+            SELECT * FROM table2;
+select * FROM table1 
+            UNION ALL
+            SELECT * FROM table2;
+create table  Emp99 (Empid int ,Ename VARCHAR (10),Address varchar(20));
+INSERT INTO emp99 VALUES (20,'hari','Mumbai');
+SAVEPOINT a;
+INSERT INTO emp99 VALUES (12,'naresh','Chandrapur');
+SAVEPOINT b;
+INSERT INTO emp99 VALUES (27,'Suresh','Raipur');
+SAVEPOINT c;
+ROLLBACK to c;
+SELECT * FROM emp99;
+delete from emp99 where empid =27;
