@@ -94,4 +94,18 @@ INSERT INTO emp99 VALUES (27,'Suresh','Raipur');
 SAVEPOINT c;
 ROLLBACK to c;
 SELECT * FROM emp99;
-delete from emp99 where empid =27;
+delete from emp99 where empid =27
+SELECT * FROM emp0 where deptno=(SELECT deptno FROM emp0 where ename='SMITH');
+SELECT * FROM emp0;
+SELECT * FROM emp0 where sal>(SELECT sal FROM emp0 where ename='FORD');
+SELECT * FROM emp0 where hiredate>(SELECT hiredate FROM emp0 where ename='JONES');
+SELECT * FROM emp0 where sal>(SELECT sal FROM emp0 where ename='BLAKE');
+SELECT * FROM emp0 where sal=(SELECT MAX(sal) FROM emp0 where SAL < (SELECT MAX(sal) FROM emp0 ));
+SELECT * FROM emp0 where MGR =(SELECT EMPNO FROM emp0 where ename='KING');
+SELECT * FROM emp0 where deptno=(SELECT deptno FROM emp0 where ename='BLAKE')  AND ENAME !='BLAKE';
+SELECT * FROM EMP0 WHERE DEPTNO =(SELECT DEPTNO FROM EMP0 WHERE ENAME LIKE 'T%');
+SELECT * FROM EMP0 WHERE SAL>(SELECT AVG(SAL) FROM EMP0) AND  DEPTNO=(SELECT DEPTNO FROM EMP0 WHERE ENAME LIKE 'T%') ;
+SELECT * FROM emp0 where sal=(SELECT MAX(sal) FROM emp0 where SAL < (SELECT MAX(sal) FROM emp0 WHERE SAL< (SELECT MAX(sal) FROM emp0 where SAL < (SELECT MAX(sal) FROM emp0) ) ));
+--GROUP BY deptno;
+UPDATE EMP0
+SET MGR =7839 WHERE ENAME='JONES';
