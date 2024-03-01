@@ -123,3 +123,19 @@ ALTER TABLE DEPT ADD CONSTRAINT PK PRIMARY KEY (DEPT_NO);
 ALTER TABLE EMP ADD CONSTRAINT FK FOREIGN KEY (DEPT_NO)REFERENCES DEPT(DEPT_NO);
 SELECT * FROM EMP WHERE DEPT_NO IN (SELECT DEPT_NO FROM DEPT WHERE LOC='CHICAGO');
 SELECT * FROM EMP WHERE DEPT_NO IN (SELECT DEPT_NO FROM DEPT WHERE D_NAME IN ('ACCOUNTANT','OPERATIONS','SALES'));
+SELECT * FROM emp;
+SELECT * FROM dept;
+
+select * from emp e where exists 
+(select dept_no from dept d where d.dept_no=e.dept_no);
+
+select d_name from dept where dept_no in
+(select dept_no from emp  where emp_job='ANALYST' GROUP by dept_no having count(*)>=1); 
+
+SELECT * FROM emp e where exists                                                      
+(select loc from dept d where d.dept_no=e.dept_no and loc!='NEWYORK');
+
+select * from dept where 
+dept_no =(select dept_no from emp  where emp_job='CLERK' and
+mgr=(select emp_id from emp  where emp_name='BLAKE') and
+sal<(select sal from emp  where emp_name='MARTIN')); 
