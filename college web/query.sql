@@ -139,3 +139,28 @@ select * from dept where
 dept_no =(select dept_no from emp  where emp_job='CLERK' and
 mgr=(select emp_id from emp  where emp_name='BLAKE') and
 sal<(select sal from emp  where emp_name='MARTIN')); 
+SELECT * FROM dept;
+    update  dept 
+    set 
+    DNAME ='Sales'
+    where dept_no =30
+    ;
+Select * from emp;
+Select * from emp
+    Inner join dept
+    on(emp.dept_no=dept.dept_no );
+Select Emp_id,Emp_name,Dname,LOC from emp
+    Inner join dept
+    on(emp.dept_no=dept.dept_no );
+    Select Emp_id,Emp_name,Dname,LOC from emp
+    left outer join dept
+    on(emp.dept_no=dept.dept_no );
+    Select Emp_name,LOC from emp
+    Inner join dept
+    on(emp.dept_no=dept.dept_no );
+    Select Dname,sal*12 as Annualsal from emp 
+    Inner join dept 
+    on(emp.dept_no=dept.dept_no ) where emp.sal>2340;
+    Select *  from emp 
+    Inner join dept 
+    on(emp.dept_no=dept.dept_no ) where emp_job  like 'S%' and dname like 'S%';    
