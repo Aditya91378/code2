@@ -164,3 +164,11 @@ Select Emp_id,Emp_name,Dname,LOC from emp
     Select *  from emp 
     Inner join dept 
     on(emp.dept_no=dept.dept_no ) where emp_job  like 'S%' and dname like 'S%';    
+create table salgrade(grade int,losal int,hisal int );
+insert into salgrade values(1,700,1200);
+insert into salgrade values(2,1201,1400);
+insert into salgrade values(3,1401,2000);
+insert into salgrade values(4,2001,3000);
+insert into salgrade values(5,3001,9000);
+        select * from salgrade;
+        select ename ,job,sal from emp,salgrade emp.sal > salgradeemp.losal and empsal<salgrade.hisal;
