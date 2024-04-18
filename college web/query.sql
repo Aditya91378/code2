@@ -172,3 +172,42 @@ insert into salgrade values(4,2001,3000);
 insert into salgrade values(5,3001,9000);
         select * from salgrade;
         select ename ,job,sal from emp,salgrade emp.sal > salgradeemp.losal and empsal<salgrade.hisal;
+SET SERVEROUTPUT ON
+DECLARE
+I NUMBER :=0;
+N INT ;
+RESULT NUMBER;
+BEGIN 
+N:=&N;
+LOOP 
+I:=I+1;
+
+RESULT:=N*I;
+DBMS_OUTPUT.put_line('RESULT'||'='|| RESULT);
+IF I>=10 THEN
+EXIT;
+END IF;
+END LOOP;
+END;
+SET SERVEROUTPUT ON
+DECLARE
+A INT;
+B INT;
+
+BEGIN
+A:=0;
+B:=&B;
+WHILE
+A<B
+LOOP
+A:=A+1;
+DBMS_OUTPUT.PUT_LINE(A);
+END LOOP;
+END;
+CREATE TABLE USER2(ID NUMBER(10) PRIMARY KEY,NAME VARCHAR2(30));
+CREATE PROCEDURE INSERTUSER1
+(ID IN NUMBER ,NAME IN VARCHAR2)
+IS BEGIN
+INSERT INTO USER2 VALUES (ID,NAME);
+END;
+SELECT * FROM USER2;
